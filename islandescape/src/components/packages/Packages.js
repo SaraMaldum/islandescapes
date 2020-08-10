@@ -2,7 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import Header from '../layout/header/Header';
 import H2 from '../layout/headings/Heading2';
 import styled from 'styled-components';
@@ -17,7 +16,6 @@ const StyledCol = styled( Col )`
         background-color: #fdf6ec;
     }
 `
-
 
 function Packages() {
     return (

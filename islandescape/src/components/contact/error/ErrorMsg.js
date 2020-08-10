@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const StyledError = styled.div`
+    color: red;
+`;
 
 function ErrorMsg( { children } ) {
     return (
-        <div>{children}</div>
+        <StyledError>{children}</StyledError>
     );
 }
 
