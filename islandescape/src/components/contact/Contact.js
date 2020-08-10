@@ -39,7 +39,7 @@ function Contact() {
 
     return (
         <>
-            <Header title="Contact form" />
+            <Header>Contact form</Header>
             <Form onSubmit={handleSubmit( onSubmit )}>
                 <p>{formSent ? 'Form was submitted. Thank you! We will respond to you shortly.' : false}</p>
                 <Form.Group>

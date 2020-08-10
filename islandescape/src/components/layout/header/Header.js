@@ -1,12 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-function Header( { title } ) {
-    return <h1>{title}</h1>;
-}
+const Header = styled.h1`
+    color: #ff9000;
+    margin: 10px 0;
+`
 
-Header.propTypes = {
-    title: PropTypes.string.isRequired,
-}
 
 export default Header; 

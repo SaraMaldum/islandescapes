@@ -8,32 +8,55 @@ import {
     Route,
     NavLink,
 } from 'react-router-dom';
+import styled from 'styled-components';
 import Home from '../../home/Home';
 import Contact from '../../contact/Contact';
 import Packages from '../../packages/Packages';
 
+const NavBar = styled( Navbar )`      
+    background-color: #3c54a0;
+`;
+
+const StyledLink = styled( NavLink )`
+    color: white;
+    padding: 5px;
+
+    &:hover {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+`;
+
+const StyledBrand = styled( Navbar )`
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+`
+
 function Menu() {
     return (
         <Router>
-            <Navbar variant="light" expand="lg">
+            <NavBar variant="light" expand="lg">
                 <NavLink to="/">
-                    <Navbar.Brand>January Island Escapes</Navbar.Brand>
+                    <StyledBrand>January Island Escapes</StyledBrand>
                 </NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <NavLink to="/" exact >
+                        <StyledLink to="/" exact>
                             Home
-                        </NavLink>
-                        <NavLink to="/packages/" exact >
+                        </StyledLink>
+                        <StyledLink to="/packages/" >
                             Packages
-                        </NavLink>
-                        <NavLink to="/contact/" exact >
+                        </StyledLink>
+                        <StyledLink to="/contact/" >
                             Contact us
-                        </NavLink>
+                        </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
+            </NavBar>
             <Container>
                 <Switch>
                     <Route path="/" exact component={Home} />
