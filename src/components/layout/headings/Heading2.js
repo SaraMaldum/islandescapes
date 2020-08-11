@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const Headings = styled.h2`
+const StyledHeading2 = styled.h2`
     color: ${function ( props ) {
         return props.theme.primaryColor;
     }};
 `
 
 function Heading2( { h2 } ) {
-    return <Headings>{h2}</Headings>;
+    return <StyledHeading2>{h2}</StyledHeading2>;
 }
 
 Heading2.propTypes = {
