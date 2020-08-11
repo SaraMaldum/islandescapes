@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../layout/menu/header/Header';
+import Header from '../layout/headings/Heading1';
 import Info from './Info';
 import Carousel from './Carousel';
 
