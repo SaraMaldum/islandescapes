@@ -2,10 +2,19 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import Form from 'react-bootstrap/Form';
-import Header from '../layout/header/Header';
-import Button from '../../styles/Button';
+import Header from '../layout/menu/header/Header';
+import Button from '../layout/Button';
 import ErrorMsg from './error/ErrorMsg';
 import Input from './Input';
+import styled from 'styled-components';
+
+const StyledLabel = styled( Form.Label )`
+    color: ${function ( props ) {
+        return props.theme.primaryColor;
+    }};
+    font-weight: bold;
+`;
+
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -37,34 +46,34 @@ function Contact() {
 
     function onSubmit( data ) {
         setFormSent( true );
-        console.log( 'Form was submitted. Thank you! ' + JSON.stringify( data ) );
+        console.log( 'The data that was submitted: ' + JSON.stringify( data ) );
     }
 
     return (
         <>
-            <Header>Contact form</Header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <Header>Contact information registration</Header>
+            <p>All fields needs to be filled out. After registration you'll be able to recieve our special offers.</p>
             <Form onSubmit={handleSubmit( onSubmit )}>
                 {formSent && <p>Thanks for registrating your contact information at our site.</p>}<Form.Group>
-                    <Form.Label>First Name</Form.Label>
+                    <StyledLabel>First Name</StyledLabel>
                     <Input type="text" name="firstName" placeholder="First name" ref={register( { required: true } )} />
                     {errors.firstName && <ErrorMsg>{errors.firstName.message}</ErrorMsg>}
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Last Name</Form.Label>
+                    <StyledLabel>Last Name</StyledLabel>
                     <Input type="text" name="lastName" placeholder="Last name" ref={register( { required: true } )} />
                     {errors.lastName && <ErrorMsg>{errors.lastName.message}</ErrorMsg>}
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Phone number</Form.Label>
+                    <StyledLabel>Phone number</StyledLabel>
                     <Input type="phone" name="phone" placeholder="Phone number" ref={register( { required: true } )} />
                     {errors.phone && <ErrorMsg>{errors.phone.message}</ErrorMsg>}
                 </Form.Group>
 
                 <Form.Group>
-                    <Form.Label>Email</Form.Label>
+                    <StyledLabel>Email</StyledLabel>
                     <Input type="email" name="email" placeholder="Email address" ref={register( { required: true } )} />
                     {errors.email && <ErrorMsg>{errors.email.message}</ErrorMsg>}
                 </Form.Group>

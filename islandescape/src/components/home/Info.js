@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import H2 from '../layout/headings/Heading2';
-import StyledButton from '../../styles/Button';
+import StyledButton from '../layout/Button';
 import styled from 'styled-components';
 
 const StyledCol = styled( Col )`

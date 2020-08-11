@@ -7,7 +7,9 @@ const StyledFooter = styled( Card )`
     margin-top: auto;
     color: white;
     font-weight: bold;
-    background-color: #b8c1e1;
+    background-color: ${function ( props ) {
+        return props.theme.primaryColor;
+    }};
     padding: 10px;
     border-radius: 0;
 `;

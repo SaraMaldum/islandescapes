@@ -2,10 +2,10 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Header from '../layout/header/Header';
+import Header from '../layout/menu/header/Header';
 import H2 from '../layout/headings/Heading2';
 import styled from 'styled-components';
-import StyledButton from '../../styles/Button';
+import StyledButton from '../layout/Button';
 
 const StyledCol = styled( Col )`
     border: 1px solid #ff9000;

@@ -13,32 +13,34 @@ import Home from '../../home/Home';
 import Contact from '../../contact/Contact';
 import Packages from '../../packages/Packages';
 
-const NavBar = styled( Navbar )`      
-    background-color: #3c54a0;
-`;
-
 const StyledLink = styled( NavLink )`
-    color: white;
-    padding: 5px;
+    color: ${function ( props ) {
+        return props.theme.primaryColor;
+    }};
+    padding: 10px;
 
     &:hover {
         font-weight: bold;
-        color: white;
+        color: ${function ( props ) {
+        return props.theme.primaryColor;
+    }};
         text-decoration: none;
     }
 `;
 
 const StyledBrand = styled( Navbar )`
-    color: white;
+    color: ${function ( props ) {
+        return props.theme.primaryColor;
+    }};
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     padding: 5px;
-`
+`;
 
 function Menu() {
     return (
         <Router>
-            <NavBar variant="light" expand="lg">
+            <Navbar variant="light" expand="lg">
                 <NavLink to="/">
                     <StyledBrand>January Island Escapes</StyledBrand>
                 </NavLink>
@@ -56,7 +58,7 @@ function Menu() {
                         </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
-            </NavBar>
+            </Navbar>
             <Container>
                 <Switch>
                     <Route path="/" exact component={Home} />
