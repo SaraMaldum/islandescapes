@@ -6,6 +6,8 @@ import Heading1 from '../layout/headings/Heading1';
 import Heading2 from '../layout/headings/Heading2';
 import styled from 'styled-components';
 import StyledButton from '../contact/Button';
+import SubHeading from '../layout/headings/SubHeading';
+
 
 const StyledCol = styled( Col )`
     border: 1px solid #ff9000;
@@ -17,13 +19,18 @@ const StyledCol = styled( Col )`
     }
 `
 
+const StyledRow = styled( Row )`
+    margin-bottom: 20px;
+    justify-content: center;
+`;
+
 function Packages() {
     return (
         <>
-            <Heading1>Our packages</Heading1>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <Container>
-                <Row>
+                <Heading1>Our packages</Heading1>
+                <SubHeading>Here you'll find all the packages we can provide. Dive in, and contact us if you have any questions.</SubHeading>
+                <StyledRow>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 1"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
@@ -88,7 +95,7 @@ function Packages() {
                         ipsum.</p>
                         <StyledButton type="button" className="btn">Read more</StyledButton>
                     </StyledCol>
-                </Row>
+                </StyledRow>
 
             </Container >
 

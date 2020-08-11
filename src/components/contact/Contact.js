@@ -7,6 +7,10 @@ import Button from './Button';
 import ErrorMsg from './error/ErrorMsg';
 import Input from './Input';
 import styled from 'styled-components';
+import { yupResolver } from '@hookform/resolvers';
+import SubHeading from '../layout/headings/SubHeading';
+import Container from 'react-bootstrap/Container';
+
 
 const StyledLabel = styled( Form.Label )`
     color: ${function ( props ) {
@@ -21,27 +25,27 @@ const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2
 const schema = yup.object().shape( {
     firstName: yup
         .string()
-        .min( 2, 'Name has to be longer than 2 characters!' )
-        .required( "First name is required" ),
+        .min( 2, 'Name has to be longer than 2 characters' )
+        .required( "Please enter your first name" ),
     lastName: yup
         .string()
-        .min( 2, 'Name has to be longer than 2 characters!' )
-        .required( "Last name is required" ),
+        .min( 2, 'Name has to be longer than 2 characters' )
+        .required( "Please enter your last name" ),
     phone: yup
         .string()
         .matches( phoneRegExp, 'Please enter a valid phone number.' )
-        .required( "A valid phone number is required." ),
+        .required( "Please enter your phone number" ),
     email: yup
         .string()
         .email( "Please enter a valid email" )
-        .required( "A valid email address is required" ),
+        .required( "Please enter your email address" ),
 } );
 
 function Contact() {
     const [formSent, setFormSent] = useState( false ); //variable for sending validation message
 
     const { register, handleSubmit, errors } = useForm( {
-        validationSchema: schema,
+        resolver: yupResolver( schema )
     } );
 
     function onSubmit( data ) {
@@ -50,9 +54,9 @@ function Contact() {
     }
 
     return (
-        <>
+        <Container>
             <Header>Contact information registration</Header>
-            <p>All fields needs to be filled out. After registration you'll be able to recieve our special offers.</p>
+            <SubHeading>Be the first to see our special offer. Submit your contact information under.</SubHeading>
             <Form onSubmit={handleSubmit( onSubmit )}>
                 {formSent && <p>Thanks for registrating your contact information at our site.</p>}<Form.Group>
                     <StyledLabel>First Name</StyledLabel>
@@ -80,7 +84,7 @@ function Contact() {
 
                 <Button type="submit">Submit</Button>
             </Form>
-        </>
+        </Container>
     )
 }
 

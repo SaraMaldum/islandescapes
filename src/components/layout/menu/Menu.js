@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from 'react-bootstrap/Container';
 import {
     BrowserRouter as Router,
     Switch,
@@ -26,7 +25,12 @@ const StyledLink = styled( NavLink )`
     }};
         text-decoration: none;
     }
+    
 `;
+
+const style = {
+    fontWeight: 'bold'
+}
 
 const StyledBrand = styled( Navbar )`
     color: ${function ( props ) {
@@ -46,26 +50,24 @@ function Menu() {
                 </NavLink>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <StyledLink to="/" exact>
+                    <Nav className="ml-auto">
+                        <StyledLink to="/" activeStyle={style} exact>
                             Home
                         </StyledLink>
-                        <StyledLink to="/packages/" >
+                        <StyledLink to="/packages/" activeStyle={style} >
                             Packages
                         </StyledLink>
-                        <StyledLink to="/contact/" >
+                        <StyledLink to="/contact/" activeStyle={style} >
                             Contact us
                         </StyledLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-            <Container>
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/contact" exact component={Contact} />
-                    <Route path="/packages" exact component={Packages} />
-                </Switch>
-            </Container>
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/contact" exact component={Contact} />
+                <Route path="/packages" exact component={Packages} />
+            </Switch>
         </Router>
     )
 }
