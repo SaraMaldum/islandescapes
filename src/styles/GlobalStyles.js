@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
         flex-direction: column;
         font-family: 'Source Sans Pro', sans-serif;
         background-color: ${function ( props ) {
-        return props.theme.tertiaryColor;
+        return props.theme.colors.tertiaryColor;
     }};
 
     }

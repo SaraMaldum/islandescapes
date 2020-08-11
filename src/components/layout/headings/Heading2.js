@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledHeading2 = styled.h2`
     color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
 `
 

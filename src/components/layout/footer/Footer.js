@@ -4,7 +4,7 @@ const Footer = styled.footer`
     color: white;
     font-weight: bold;
     background-color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
     padding: 10px;
     border-radius: 0;

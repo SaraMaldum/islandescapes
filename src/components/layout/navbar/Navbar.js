@@ -12,16 +12,18 @@ import Home from '../../home/Home';
 import Contact from '../../contact/Contact';
 import Packages from '../../packages/Packages';
 
+
+//Styles components
 const StyledLink = styled( NavLink )`
     color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
     padding: 10px;
 
     &:hover {
         font-weight: bold;
         color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
         text-decoration: none;
     }
@@ -34,14 +36,15 @@ const style = {
 
 const StyledBrand = styled( Navbar )`
     color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
     font-weight: bold;
     font-size: 24px;
     padding: 5px;
 `;
 
-function Menu() {
+//Navbar function
+function NavBar() {
     return (
         <Router>
             <Navbar variant="light" expand="lg">
@@ -72,4 +75,4 @@ function Menu() {
     )
 }
 
-export default Menu;
+export default NavBar;

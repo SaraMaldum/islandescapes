@@ -15,8 +15,9 @@ const StyledCol = styled( Col )`
     margin: 10px;
 
     &:hover {
-        background-color: #fdf6ec;
-    }
+        background-color: ${function ( props ) {
+        return props.theme.colors.tertiaryColor;
+    }};    }
 `
 
 const StyledRow = styled( Row )`

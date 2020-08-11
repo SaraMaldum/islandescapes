@@ -11,14 +11,12 @@ import { yupResolver } from '@hookform/resolvers';
 import SubHeading from '../layout/headings/SubHeading';
 import Container from 'react-bootstrap/Container';
 
-
 const StyledLabel = styled( Form.Label )`
     color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
     font-weight: bold;
 `;
-
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 

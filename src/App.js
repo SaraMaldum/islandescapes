@@ -1,16 +1,11 @@
 import React from 'react';
-import Menu from './components/layout/menu/Menu';
+import NavBar from './components/layout/navbar/Navbar';
 import Footer from './components/layout/footer/Footer';
 import GlobalStyles from './styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import './App.css';
-
-const theme = {
-  primaryColor: '#1D668F',
-  secondaryColor: '#ff9000',
-  tertiaryColor: '#fdf6ec',
-}
+import theme from './styles/theme';
 
 const Wrapper = styled.div`
   &.wrapper {
@@ -18,15 +13,14 @@ const Wrapper = styled.div`
 }
 `
 
-
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <div className="wrapper">
+        <Wrapper className="wrapper">
           <GlobalStyles />
-          <Menu />
-        </div>
+          <NavBar />
+        </Wrapper>
         <Footer>&copy; Sara Maldum</Footer>
 
       </ThemeProvider>

@@ -5,7 +5,7 @@ const SubHeading = styled.p`
     font-style: italic;
     margin: -10px 0 20px 30px;
     color: ${function ( props ) {
-        return props.theme.primaryColor;
+        return props.theme.colors.primaryColor;
     }};
 `;
 
