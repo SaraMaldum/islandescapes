@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledError = styled.div`
-    color: red;
+    color: ${({theme}) => theme.colors.error};
 `;
 
 function ErrorMsg( { children } ) {

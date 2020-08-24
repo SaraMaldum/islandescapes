@@ -3,9 +3,7 @@ import styled from 'styled-components';
 const Footer = styled.footer`
     color: white;
     font-weight: bold;
-    background-color: ${function ( props ) {
-        return props.theme.colors.primaryColor;
-    }};
+    background-color: ${({theme}) => theme.colors.primaryColor};
     padding: 10px;
     border-radius: 0;
     display: flex;

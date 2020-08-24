@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledHeading2 = styled.h2`
-    color: ${function ( props ) {
-        return props.theme.colors.primaryColor;
-    }};
+    color: ${({theme}) => theme.colors.primaryColor};
 `
 
 function Heading2( { h2 } ) {

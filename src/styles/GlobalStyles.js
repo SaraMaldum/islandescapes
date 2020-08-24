@@ -8,10 +8,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         font-family: 'Source Sans Pro', sans-serif;
-        background-color: ${function ( props ) {
-        return props.theme.colors.tertiaryColor;
-    }};
-
+        background-color: ${({theme}) => theme.colors.tertiaryColor};
     }
 `;
 

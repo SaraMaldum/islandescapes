@@ -7,27 +7,21 @@ import {
     Route,
     NavLink,
 } from 'react-router-dom';
-import styled from 'styled-components';
 import Home from '../../home/Home';
 import Contact from '../../contact/Contact';
 import Packages from '../../packages/Packages';
-
+import styled from 'styled-components';
 
 //Styles components
 const StyledLink = styled( NavLink )`
-    color: ${function ( props ) {
-        return props.theme.colors.primaryColor;
-    }};
+    color: ${({theme}) => theme.colors.primaryColor};
     padding: 10px;
 
     &:hover {
         font-weight: bold;
-        color: ${function ( props ) {
-        return props.theme.colors.primaryColor;
-    }};
+        color: ${({theme}) => theme.colors.primaryColor};
         text-decoration: none;
     }
-    
 `;
 
 const style = {
@@ -35,9 +29,7 @@ const style = {
 }
 
 const StyledBrand = styled( Navbar )`
-    color: ${function ( props ) {
-        return props.theme.colors.primaryColor;
-    }};
+    color: ${({theme}) => theme.colors.primaryColor};
     font-weight: bold;
     font-size: 24px;
     padding: 5px;

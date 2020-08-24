@@ -11,7 +11,7 @@ function Home() {
             <Carousel />
             <Container>
                 <Header>Welcome to January Island Escapes</Header>
-                <SubHeading>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</SubHeading>
+                <SubHeading>Are you looking for the perfect place to rest? Do you love white beach and clear water? We'll help you find the perfect vacation location.</SubHeading>
                 <Info />
             </Container>
         </>

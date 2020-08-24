@@ -12,9 +12,7 @@ import SubHeading from '../layout/headings/SubHeading';
 import Container from 'react-bootstrap/Container';
 
 const StyledLabel = styled( Form.Label )`
-    color: ${function ( props ) {
-        return props.theme.colors.primaryColor;
-    }};
+    color: ${({theme}) => theme.colors.primaryColor};
     font-weight: bold;
 `;
 
