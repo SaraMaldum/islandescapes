@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import Form from 'react-bootstrap/Form';
 import Header from '../layout/headings/Heading1';
-import Button from './Button';
+import Button from '../layout/buttons/Button';
 import ErrorMsg from './error/ErrorMsg';
 import Input from './Input';
 import styled from 'styled-components';

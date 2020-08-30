@@ -34,6 +34,7 @@ const StyledBrand = styled( Navbar )`
     font-weight: bold;
     font-size: 24px;
     padding: 5px;
+    text-decoration: none;
 `;
 
 //Navbar function

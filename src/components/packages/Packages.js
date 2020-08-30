@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Heading1 from '../layout/headings/Heading1';
 import Heading2 from '../layout/headings/Heading2';
 import styled from 'styled-components';
-import StyledButton from '../contact/Button';
+import StyledLinkBtn from '../layout/buttons/LinkBtn';
 import SubHeading from '../layout/headings/SubHeading';
 
 
@@ -36,56 +36,56 @@ function Packages() {
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 2"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 3"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 4"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 5"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 6"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 7"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                     <StyledCol md={3}>
                         <Heading2 h2="Package 8"></Heading2>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
 
                     <StyledCol md={3}>
@@ -93,7 +93,7 @@ function Packages() {
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
                         magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
                         ipsum.</p>
-                        <StyledButton type="button" className="btn">Read more</StyledButton>
+                        <StyledLinkBtn to="/Packages" className="btn">Read more</StyledLinkBtn>
                     </StyledCol>
                 </StyledRow>
 
