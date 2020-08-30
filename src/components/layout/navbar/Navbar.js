@@ -19,13 +19,14 @@ const StyledLink = styled( NavLink )`
 
     &:hover {
         font-weight: bold;
-        color: ${({theme}) => theme.colors.primaryColor};
+        color: ${({theme}) => theme.colors.secondaryColor};
         text-decoration: none;
     }
 `;
 
 const style = {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: '#ff9000',
 }
 
 const StyledBrand = styled( Navbar )`

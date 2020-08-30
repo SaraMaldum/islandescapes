@@ -1,8 +1,8 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import banner1 from './images/banner1.jpg';
-import banner2 from './images/banner2.jpg';
-import banner3 from './images/banner3.jpg';
+import newBanner1 from './images/newBanner1.jpg';
+import newBanner2 from './images/newBanner2.jpg';
+import newBanner3 from './images/newBanner3.jpg';
 
 function ImageCarousel() {
     return (
@@ -10,7 +10,7 @@ function ImageCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={banner1}
+                    src={newBanner1}
                     alt="Sunset at the beach"
                 />
             </Carousel.Item>
@@ -18,7 +18,7 @@ function ImageCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={banner2}
+                    src={newBanner2}
                     alt="Bridge over the sea to a beach"
                 />
             </Carousel.Item>
@@ -26,7 +26,7 @@ function ImageCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src={banner3}
+                    src={newBanner3}
                     alt="Beach with a food truck"
                 />
             </Carousel.Item>

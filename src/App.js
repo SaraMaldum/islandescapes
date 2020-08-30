@@ -22,9 +22,7 @@ function App() {
           <NavBar />
         </Wrapper>
         <Footer>&copy; Sara Maldum</Footer>
-
       </ThemeProvider>
-
     </>
   );
 }
