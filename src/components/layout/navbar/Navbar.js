@@ -40,7 +40,7 @@ const StyledBrand = styled( Navbar )`
 //Navbar function
 function NavBar() {
     return (
-        <Router>
+        <Router basename='/islandescapes'>
             <Navbar variant="light" expand="lg">
                 <NavLink to="/">
                     <StyledBrand>January Island Escapes</StyledBrand>

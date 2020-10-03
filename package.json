@@ -1,5 +1,6 @@
 {
   "name": "islandescape",
+  "homepage": "http://saramaldum.com/islandescapes/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
